@@ -1,0 +1,6 @@
+[package]
+name = "last_digit"
+version = "0.1.0"
+authors = ["huyang <huwsun@gmail.com>"]
+
+[dependencies]
