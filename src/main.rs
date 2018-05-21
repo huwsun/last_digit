@@ -85,6 +85,7 @@ fn last_digit_a(v: &[u64], pmod: u64) -> u64 {
     }
 }
 
+//my init version
 fn last_digit_1(lst: &[u64]) -> u64 {
     last_digit_a(lst, 10)
 }
@@ -103,10 +104,13 @@ fn pow_mod(exp: i32, base: i32) -> i32 {
     (mod_off(base, 20) as f64).powi(mod_off(exp, 4)) as i32
 }
 
+
+//cleverest version
 fn last_digit(lst: &[u64]) -> u64 {
     lst.iter().map(|x| *x as i32).rev().fold(1, pow_mod) as u64 % 10
 }
 
+//simplese version
 fn last_digiti_2(lst: &[u64]) -> u64 {
     if lst.is_empty() {
         1
